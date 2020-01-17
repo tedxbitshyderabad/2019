@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+html, body{
+  width: 100%;
+  height: 100%;
+   background: url(../img/backg.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+/*For Loader*/
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../img/Preloader_8.gif) center no-repeat #fff;
+}
+
+/***For Landing page animation***/
+
+.center {
+  position: absolute;
+  top: 76%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.event {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  animation: fade_in 3s ease-in-out;
+}
+@keyframes fade_in {
+  0%{
+    top: -5px;
+    opacity: 0;
+    display: flex;
+  }
+  100%{
+    top: 0px;
+    opacity: 1;
+    display: none;
+  }
+}
+.event li {
+  /* color: white; */
+  list-style: none;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.event li:nth-child(1) {
+  color: #e62b1e;
+}
+.event li:nth-child(2) {
+  color: #e62b1e;
+}
+.event li:nth-child(3) {
+  color: #e62b1e;
+}
+.event li:nth-child(4) {
+  color: #e62b1e;
+}
+.event li:nth-child(5) {
+  color: black;
+}
+.event li:nth-child(6) {
+  color: black;
+}
+.event li:nth-child(7) {
+  color: black;
+}
+.event li:nth-child(8) {
+  color: black;
+}
+.event li:nth-child(9) {
+  color: black;
+}
+.event li:nth-child(10) {
+  color: black;
+}
+.event li:nth-child(11) {
+  color: black;
+}
+.event li:nth-child(12) {
+  color: black;
+}
+.event li:nth-child(13) {
+  color: black;
+}
+.event li:nth-child(14) {
+  color: black;
+}
+.event li:nth-child(15) {
+  color: black;
+}
+.event li:nth-child(16) {
+  color: black;
+}
+.event li:nth-child(17) {
+  color: black;
+}
+.below
+{
+  margin-top:-4%;
+  margin-left: 1%;
+  font-family: 'Roboto', sans-serif;
+  color:black;
+  font-weight: bold;
+  text-shadow: 1px 15px 16px #00000042;
+  animation: fade_in 3s ease-in-out;
+}
+
+figure {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+
+figure div {
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+}
+
+figure:hover div {
+  transform: rotateX(-90deg);
+}
+
+.span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  border: 3px solid #e62b1e;
+  font-family: 'Roboto',sans-serif;
+  line-height: 30px;
+  font-size: 15pt;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.span:nth-child(1) {
+  color: red;
+  transform: translate3d(0, 0, 20px);
+  -webkit-transform: translate3d(0, 0, 20px);
+}
+
+.span:nth-child(2) {
+  color: #fff;
+  background: red;
+  transform: rotateX(90deg) translate3d(0, 0, 20px);
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 20px);
+}
+
+.center1
+{
+  position: absolute;
+  top: 86%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+.center1 div
+{
+  animation: fade_in 3s ease-in-out;
+
+}
+
+.fixed-frame {
+    position: fixed;
+    z-index: 1000;
+    color: black;
+    animation: fade_in 3s ease-in-out;
+}
+
+.fixed-frame h5 {
+    font-size: 16px;
+    position: fixed;
+    letter-spacing: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    top: 50%;
+    left: -60px;
+    margin-left: -50px;
+}
+
+.fixed-frame a {
+    color: black;
+}
+
+.fixed-frame a:link {
+    text-decoration: none;
+}
+
+.fixed-frame a:hover {
+    opacity: 1;
+    color:#e62b1e;
+}
+
+@media(max-width: 1024px) {
+      .fixed-frame {
+        height: 10em;
+        position: fixed;
+    }
+    .fixed-frame h5 {
+        margin: 0;
+        position: fixed;
+        letter-spacing: 3px;
+        top: 95%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+}
+  }
+
+@media(max-width: 600px) {
+  .event li {
+  font-size: 2.5em;
+}
+}
+
+@media(max-width: 380px) {
+  .event li {
+  font-size: 2em;
+}
+.center {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+}
+}
